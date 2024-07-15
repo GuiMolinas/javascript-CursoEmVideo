@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilo/style.css">
+    <title> Verificador de idade </title>
+</head>
+<body>
+    <header>
+        <h1> Verificador de idade </h1>
+    </header>
+    <section>
+        <div>
+            <p>
+                <label for="itxtano"> Ano de nascimento: </label>
+                <input type="number" name="txtano" id="itxtano" step="1" placeholder="Insira seu ano de nascimento aqui">
+            </p>
+            <p>
+                Sexo:
+                <input type="radio" name="rsex" id="masc" checked> <label for="masc"> Masculino </label>
+                <input type="radio" name="rsex" id="fem"> <label for="fem"> Feminino </label>
+            </p>
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()">
+            </p>
+            
+        </div>
+        <div id="res">
+            Aguardando inserção dos dados...
+        </div>
+    </section>
+    <footer>
+        <p> Inspirado no exercício realizado no &copy; CursoemVídeo </p>
+    </footer>
+    <script src="script.js"></script>
+    
+</body>
+</html>

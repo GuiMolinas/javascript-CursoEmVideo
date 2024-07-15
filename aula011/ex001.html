@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> DETRAN </title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.3em;
+            background-color: aquamarine;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1> DETRAN SP </h1>
+    <label for="ivel"> Velocidade do veículo </label>
+    <input type="number" name="vel" id="ivel" placeholder="Insira aqui a velocidade" step="0.01"> km/h <br>
+    <input type="button" value="Confirmar" onclick="calcular()">
+    <div id="res">
+
+    </div>
+    <script>
+        function calcular() {
+            var num = window.document.getElementById('ivel');
+            var vel = Number(num.value);
+            var res = window.document.querySelector("div#res");
+
+            if(vel > 50) {
+                res.innerHTML = document.write("<p> Você ultrapassou a velocidade! </p> ");
+            }
+
+            else {
+                res.innerHTML = window.document.write("<p> Você está dentro da velocidade máxima </p>");
+            }
+        }
+    </script>
+    
+</body>
+</html>

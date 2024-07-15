@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilo/style.css">
+    <title> Tabuada </title>
+</head>
+<body>
+    <header>
+        <h1> Tabuada </h1>
+    </header>
+    <section>
+        <div>
+            <p>
+                <label for="inumero"> Número: </label>
+                <input type="number" name="numero" id="inumero" step="1">
+            </p>
+            <p>
+                <input type="button" value="Gerar tabuada" onclick="tabuada()">
+            </p>
+        </div>
+        <div id="res">
+            Multiplicando... <br>
+            <select name="tabuada" id="seltab" size="10">
+           <option value="v1"> Digite um número na caixa acima</option>
+            </select>
+        </div>
+    </section>
+    <footer>
+        <p> Inspirado no exercício realizado no &copy; CursoemVídeo </p>
+    </footer>
+    <script src="script.js"></script>
+    
+</body>
+</html>

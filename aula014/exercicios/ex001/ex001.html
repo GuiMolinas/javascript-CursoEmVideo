@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilo/style.css">
+    <title> Vamos contar! </title>
+</head>
+<body>
+    <header>
+        <h1> Vamos contar </h1>
+    </header>
+    <section>
+        <div>
+            <p>
+                <label for="iinicio"> Início: </label>
+                <input type="number" name="inicio" id="iinicio" step="1" placeholder="Insira aqui o número inicial">
+            </p>
+            <p>
+                <label for="ifim"> Fim: </label>
+                <input type="number" name="fim" id="ifim" step="1" placeholder="Insira aqui o número final">
+            </p>
+            <p>
+                <label for="ipasso"> Passo: </label>
+                <input type="number" name="passo" id="ipasso" step="1" placeholder="Insira aqui o passo a ser somado">
+            </p>
+            <p>
+                <input type="button" value="Contar" onclick="contar()">
+            </p>
+        </div>
+        <div id="res">
+            Contando... <br>
+        </div>
+    </section>
+    <footer>
+        <p> Inspirado no exercício realizado no &copy; CursoemVídeo </p>
+    </footer>
+    <script src="script.js"></script>
+    
+</body>
+</html>
